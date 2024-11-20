@@ -3,77 +3,103 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My profile</title>
-    <link rel="icon" href="./Image/IMG-20241013-WA0000.jpg">
+    <title>Home</title>
     <style>
-       
-          body{
-        background-image: url(./Image/4qJOvW.webp);
-        background-repeat: no-repeat;
-        background-size: cover;
-          }
+        body{
+            background-image: url(./Image/my\ background.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .nav{
+            background-color: chartreuse;
+            display: grid;
+            padding-bottom: 5px;
+        }
+        ul{
+            list-style: none;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            margin-left: 12%;
+        }
 
-        h1{
-            text-align: center;
-            font-family: Arial, Helvetica, sans-serif;
-            background-color:cyan;
-            color:blue
+        #home{
+            margin-left: 60%;
         }
-        #div{
-            color: aqua;
-            text-align: center;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            font-size: x-large;
-            font-weight: bolder;
+
+        #about{
+            margin-left: 60%;
         }
-        #div{
-            text-align: left;
+        #contact{
+            margin-left: 60%;
         }
-        #div1{
-            color: blue;
-            margin-left: 2px;            
-            font-weight: bolder;
-            font-size: x-large;
-        }
-        #div1 p{
-            text-align: left;
-        }
-        button{
-            color: blue;
-            text-align: left;
-            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-            padding: 12px;
-            font-size: medium;
-            border-radius: 30%;
-        }
-        button:hover{
-            color: chocolate;
-            cursor: auto;
+        .search input{
+            width: 70%;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            margin-left: 17%;
+            backdrop-filter: 20px;
+            border: 1px solid greenyellow;
             border-radius: 20px;
-            background-color: aqua;
+            
         }
-
-        p{
-            text-align: right;
+        #welcome{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 50px;
+            margin-left: 20%;
+            color: white;
         }
+        .grid-container{
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+        }
+        .para p{
+            font-family: Arial, Helvetica, sans-serif;
+            font-style: italic;
+            font-size: 50px;
+            color: white;
+        }
+        .img p{
+            font-size:30px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+        }
+         .img1 p{
+            font-size: 30px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+         }
     </style>
 </head>
-<h1>About Me</h1>
 <body>
-    <center><p><img src="./Image/IMG-20241013-WA0000.jpg" alt="my image" width="30%"></center></p><br><br>
+    <div class="nav">
+    <ul>
+        <li id="home"> <a href="./claude.html">Home</a></li>
+        <li id="about"> <a href="./About.html">About</a></li>
+        <li id="contact"> <a href="./contact.html">Contact</a></li>
+    </ul>
+    </div>
+    <div class="search"><br><br>
+        <input type="text" name="" placeholder="search">
+    </div><br>
+    <p id="welcome">WELCOME TO GREENFIELED</p><br><br>
+    <div class="grid-container">
+        <div class="para">
+        <p>we offer the best services as far as web developement is concern</p>
+        <p>our team is always ready to help you find your part</p>
+        <p>we are trying to creat a flexible world with vtib our institute</p>
+        </div>
+        <div class="sect1">
+            <div class="img1">
+                <img src="./Image/providence.png" width="200px">
+            <p id="name">tutor special</p>
 
-    <div id="div">
-        <p>I am a junoir developer traning in vtib</p>
-        <p>In vtib there are well qualified lecturers with radiant experience</p>
-        <p>I want to boost my skills in web developement and create a world full of simplicity vis-a -vis technology</p>
+            </div>
+            <div class="img">
+                <img src="./Image/IMG-20241013-WA0000.jpg" width="200px">
+                <p id="student"> the students</p>
+            </div>
+        </div>
     </div>
-    <div id="div1">
-        <p>Mr providence is one  my lecturers</p>
-        <p>He teaches version control system</p>
-        <p>we just finished his course</p>
-        <p>I can say that the course was good though i had some challenges</p>
-    </div>
-   <center><button type="submit">For more about Claude</button></center>
     
 </body>
 </html>
